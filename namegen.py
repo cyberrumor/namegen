@@ -24,20 +24,20 @@ listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre",
 listA4 = ["Arch", "Noble"]
 
 
-# Good
+# Good adjectives
 listB1 = ["Glorious", "Just", "Fair", "Pure", "Light", "Kind", "Generous", "Gentle", "Graceful", "Humble", "Grand", "Great", "Immaculate", "Benevolent", "Didactic", "Brave"]
-# Neutral
+# Neutral adjectives
 listB2 = ["Capricious", "Fair", "Mercurial", "Calm", "Fickle", "Ambivalent", "Colloquial", "Wise", "Elusive", "Lone"]
-# Evil
-listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Nemesis"]
+# Evil adjectives
+listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Darkest", "Night"]
 
 
 # Born someone, list of places
 listC1 = ["Durak Mithal", "Lion's Gate", "Serpantine Isle", "Black Sea", "Guilded Coast Castle", "Blood Throne"]
-# Became someone, list of deeds
-listC2 = ["Heart", "Hero", "Author"]
-# No one, list of commoners
-listC3 = ["Wanderer", "Smith", "Stoneman", "Shoemaker"]
+# Became someone, list of deeds, nouns
+listC2 = ["Heart", "Hero", "Author", "Savior"]
+# No one, list of commoners, names
+listC3 = ["", "Smith", "Stoneman", "Shoemaker"]
 
 # names, male
 namesm = ["Sherlock", "Simon", "Stoney", "Sai"]
@@ -47,6 +47,11 @@ namesf = ["Xia", "Xaya", "Lily", "Violet", "Fiora", "Flower", "Rose", "Diamond",
 
 # names, indifferent
 namesi = ["Jessie", "Alex", "Atlas", "Aspen"]
+
+# names, evil
+namese = ["Nemesis", "Guile"]
+
+
 
 # gender
 print("[1]: Male")
@@ -111,10 +116,22 @@ if (question3 == 3):
 	columnC = listC3
 
 
+# pick from namese if question2 == 3 and question3 == 3
+
+
+
+# generate name
 if (question3 == 1):
 	print(random.choice(columnA), random.choice(names), "of", random.choice(columnC))
 	exit()
 elif (question3 == 2):
 	print(random.choice(names), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
+	exit()
 else:
-	print(random.choice(names), random.choice(columnC))
+	# Evil nobody
+	if (question2 == 3):
+		print(random.choice(namese), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
+		exit()
+	# Other nobody
+	else:
+		print(random.choice(names), random.choice(columnC))
