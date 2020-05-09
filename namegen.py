@@ -19,7 +19,7 @@ listA1 = ["Mr", "Sir", "Lord", "Sire", "Professor", "Doctor", "Master", "Count",
 # Female
 listA2 = ["Mrs", "Queen", "Princess", "Lady", "Widow", "Miss", "Madame", "Mistress", "Countess", "Baroness", "Magistrix"]
 # Non-binary
-listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "The", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magistor", "Counciler", "Ensign", "Shadow"]
+listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magistor", "Counciler", "Ensign", "Shadow"]
 # All
 listA4 = ["Arch", "Noble"]
 
