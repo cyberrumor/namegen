@@ -19,37 +19,37 @@ listA1 = ["Mr", "Sir", "Lord", "Sire", "Professor", "Doctor", "Master", "Count",
 # Female
 listA2 = ["Mrs", "Queen", "Princess", "Lady", "Widow", "Miss", "Madame", "Mistress", "Countess", "Baroness", "Magistrix"]
 # Non-binary
-listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magistor", "Counciler", "Ensign", "Shadow"]
+listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magister", "Counciler", "Ensign", "Shadow"]
 # All
-listA4 = ["Arch", "Noble"]
+listA4 = ["Arch", "Noble", "Augur", "Seer", "Prelat", "Oligarch", "Tilde", "Voice"]
 
 
 # Good adjectives
-listB1 = ["Glorious", "Just", "Fair", "Pure", "Light", "Kind", "Generous", "Gentle", "Graceful", "Humble", "Grand", "Great", "Immaculate", "Benevolent", "Didactic", "Brave"]
+listB1 = ["Glorious", "Just", "Fair", "Pure", "Light", "Kind", "Imperious", "Generous", "Gentle", "Graceful", "Humble", "Grand", "Great", "Immaculate", "Benevolent", "Didactic", "Brave", "Dawn", "Worthy", "White", "Cenobite"]
 # Neutral adjectives
-listB2 = ["Capricious", "Fair", "Mercurial", "Calm", "Fickle", "Ambivalent", "Colloquial", "Wise", "Elusive", "Lone"]
+listB2 = ["Capricious", "Fair", "Mercurial", "Calm", "Fickle", "Ambivalent", "Colloquial", "Wise", "Elusive", "Lone", "Dusk", "Twilight", "Immortal", "Gray", "Litany", ]
 # Evil adjectives
-listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Darkest", "Night"]
+listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Darkest", "Night", "Midnight", "Wicked", "Black"]
 
 
 # Born someone, list of places
-listC1 = ["Durak Mithal", "Lion's Gate", "Serpantine Isle", "Black Sea", "Guilded Coast Castle", "Blood Throne"]
+listC1 = ["Durak Mithal", "Lion's Gate", "the Serpantine Isle", "the Black Sea", "the Guilded Coast Castle", "the Blood Throne", "the Western Coast", "the Eastern Marsh", "the Southern Wastes", "the Northern Woods", "the Dry Sea", "the Sweltering Isles", "Dragon's Cliff", "the Shrieking Bog", "the Misty Caverns", "the Merciless Abyss", "the Forgotten Paths", "Elder Grove", "Charred Thicket", "Forbidden Orchard", "the Corrupted Mines", "Sheltered Glen", "the World's Coffin", "Last Garden", "Ol' Marine", "Ladder of Vines", "Obsidian Crater", "the Cabal Archives"]
 # Became someone, list of deeds, nouns
-listC2 = ["Heart", "Hero", "Author", "Savior"]
-# No one, list of commoners, names
-listC3 = ["", "Smith", "Stoneman", "Shoemaker"]
+listC2 = ["Heart", "Hero", "Author", "Savior", "Figure", "Luminary", "Sympathizer", "Advocate", "Patron", "Guardian", "Subjugator", "Icon", "Paragon"]
+# No one, list of commoners, names, nouns
+listC3 = ["Stoneman", "Shoemaker", "Brewmaster", "Ranger", "Tutor", "Tailor", "Seeker", "Stitcher", "Gambler", "Baker", "Brewer", "Fisher", "Fletcher", "Skinner", "Glover", "Tapper", "Turner", "Woodward", "Bowmaker", "Slaymaker", "Lister", "Potter",  "Sumner", "Kitemaker", "Forseer"]
 
 # names, male
-namesm = ["Sherlock", "Simon", "Stoney", "Sai"]
+namesm = ["Sherlock", "Simon", "Stoney", "Edward", "August", "Maximus", "Ormel", "Blaine", "James", "Arthur", "Ernest", "William", "Gregory", "Samuel", "Byron", "Augustus", "Zachariah", "Elijah" ]
 
 # names, female
-namesf = ["Xia", "Xaya", "Lily", "Violet", "Fiora", "Flower", "Rose", "Diamond", "Jewel", "Ruby", "Rita", "Liliana", "Morgana", "Victoria", "Lisa"]
+namesf = ["Xia", "Xaya", "Violet", "Fiora", "Flower", "Rose", "Diamond", "Jewel", "Ruby", "Rita", "Liliana", "Morgana", "Victoria", "Lisa", "Elena", "Iona", "Rozalia", "Mariposa", "Marina", "Orchid", "Daphne", "Teresa", "Jane", "Jillian", "Magnolia", "Paige", ]
 
 # names, indifferent
-namesi = ["Jessie", "Alex", "Atlas", "Aspen"]
+namesi = ["Alex", "Atlas", "Aspen", "Sai", "Afton", "River", "Jade", "Kelcee", "Onyx", "Ray", "Brynn", "Brion", "Euros", "Clark", "Crucible", "Scout"]
 
-# names, evil
-namese = ["Nemesis", "Guile"]
+# evil names, indifferent
+enames = ["Nemesis", "Guile", "Lich", "Hass", "Hatred", "Mal Coeur", "Coeur de Noir", "Hostility", "Vladimir", "Rona", "Gloom", "Abominable", "Pride", "Vanity", "Sloth", "Lust" "Gluttony", "Envy", "Wrath", "Bones", "Revenge", "Emptiness", "Pain", "Litterer"]
 
 
 
@@ -116,10 +116,6 @@ if (question3 == 3):
 	columnC = listC3
 
 
-# pick from namese if question2 == 3 and question3 == 3
-
-
-
 # generate name
 if (question3 == 1):
 	print(random.choice(columnA), random.choice(names), "of", random.choice(columnC))
@@ -130,7 +126,7 @@ elif (question3 == 2):
 else:
 	# Evil nobody
 	if (question2 == 3):
-		print(random.choice(namese), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
+		print(random.choice(enames), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
 		exit()
 	# Other nobody
 	else:
