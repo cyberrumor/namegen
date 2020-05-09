@@ -95,6 +95,7 @@ if (question2 == 2):
 	columnB = listB2
 if (question2 == 3):
 	columnB = listB3
+	names = enames
 
 # noun
 print("[1]: Born someone")
