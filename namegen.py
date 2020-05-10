@@ -21,13 +21,13 @@ listA2 = ["Mrs", "Queen", "Princess", "Lady", "Widow", "Miss", "Madame", "Mistre
 # Non-binary
 listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magister", "Counciler", "Ensign", "Shadow"]
 # All
-listA4 = ["Arch", "Noble", "Augur", "Seer", "Prelat", "Oligarch", "Tilde", "Voice"]
+listA4 = ["Arch", "Noble", "Augur", "Seer", "Prelat", "Oligarch", "Tilde"]
 
 
 # Good adjectives
 listB1 = ["Glorious", "Just", "Fair", "Pure", "Light", "Kind", "Imperious", "Generous", "Gentle", "Graceful", "Humble", "Grand", "Great", "Immaculate", "Benevolent", "Didactic", "Brave", "Dawn", "Worthy", "White", "Cenobite"]
 # Neutral adjectives
-listB2 = ["Capricious", "Fair", "Mercurial", "Calm", "Fickle", "Ambivalent", "Colloquial", "Wise", "Elusive", "Lone", "Dusk", "Twilight", "Immortal", "Gray", "Litany", ]
+listB2 = ["Capricious", "Fair", "Mercurial", "Calm", "Fickle", "Ambivalent", "Colloquial", "Wise", "Elusive", "Lone", "Dusk", "Twilight", "Immortal", "Gray", "Litany"]
 # Evil adjectives
 listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Darkest", "Night", "Midnight", "Wicked", "Black"]
 
@@ -36,8 +36,10 @@ listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy
 listC1 = ["Durak Mithal", "Lion's Gate", "the Serpantine Isle", "the Black Sea", "the Guilded Coast Castle", "the Blood Throne", "the Western Coast", "the Eastern Marsh", "the Southern Wastes", "the Northern Woods", "the Dry Sea", "the Sweltering Isles", "Dragon's Cliff", "the Shrieking Bog", "the Misty Caverns", "the Merciless Abyss", "the Forgotten Paths", "Elder Grove", "Charred Thicket", "Forbidden Orchard", "the Corrupted Mines", "Sheltered Glen", "the World's Coffin", "Last Garden", "Ol' Marine", "Ladder of Vines", "Obsidian Crater", "the Cabal Archives"]
 # Became someone, list of deeds, nouns
 listC2 = ["Heart", "Hero", "Author", "Savior", "Figure", "Luminary", "Sympathizer", "Advocate", "Patron", "Guardian", "Subjugator", "Icon", "Paragon"]
-# No one, list of commoners, names, nouns
-listC3 = ["Stoneman", "Shoemaker", "Brewmaster", "Ranger", "Tutor", "Tailor", "Seeker", "Stitcher", "Gambler", "Baker", "Brewer", "Fisher", "Fletcher", "Skinner", "Glover", "Tapper", "Turner", "Woodward", "Bowmaker", "Slaymaker", "Lister", "Potter",  "Sumner", "Kitemaker", "Forseer"]
+
+
+# No one, list of last names
+listC3 = ["Stoneman", "Shoemaker", "Brewmaster", "Ranger", "Tutor", "Tailor", "Seeker", "Stitcher", "Gambler", "Baker", "Brewer", "Fisher", "Fletcher", "Skinner", "Glover", "Tapper", "Turner", "Woodward", "Bowmaker", "Slaymaker", "Lister", "Potter",  "Sumner", "Kitemaker", "Forseer", "Architect"]
 
 # names, male
 namesm = ["Sherlock", "Simon", "Stoney", "Edward", "August", "Maximus", "Ormel", "Blaine", "James", "Arthur", "Ernest", "William", "Gregory", "Samuel", "Byron", "Augustus", "Zachariah", "Elijah" ]
@@ -46,10 +48,10 @@ namesm = ["Sherlock", "Simon", "Stoney", "Edward", "August", "Maximus", "Ormel",
 namesf = ["Xia", "Xaya", "Violet", "Fiora", "Flower", "Rose", "Diamond", "Jewel", "Ruby", "Rita", "Liliana", "Morgana", "Victoria", "Lisa", "Elena", "Iona", "Rozalia", "Mariposa", "Marina", "Orchid", "Daphne", "Teresa", "Jane", "Jillian", "Magnolia", "Paige", ]
 
 # names, indifferent
-namesi = ["Alex", "Atlas", "Aspen", "Sai", "Afton", "River", "Jade", "Kelcee", "Onyx", "Ray", "Brynn", "Brion", "Euros", "Clark", "Crucible", "Scout"]
+namesi = ["Alex", "Atlas", "Aspen", "Sai", "Afton", "River", "Jade", "Kelcee", "Onyx", "Ray", "Brynn", "Brion", "Euros", "Clark", "Crucible", "Thorn"]
 
 # evil names, indifferent
-enames = ["Nemesis", "Guile", "Lich", "Hass", "Hatred", "Mal Coeur", "Coeur de Noir", "Hostility", "Vladimir", "Rona", "Gloom", "Abominable", "Pride", "Vanity", "Sloth", "Lust" "Gluttony", "Envy", "Wrath", "Bones", "Revenge", "Emptiness", "Pain", "Litterer"]
+enames = ["Nemesis", "Guile", "Lich", "Hass", "Hatred", "Mal Coeur", "Coeur de Noir", "Hostility", "Vladimir", "Rona", "Gloom", "Abominable", "Pride", "Vanity", "Sloth", "Lust", "Gluttony", "Envy", "Wrath", "Bones", "Revenge", "Emptiness", "Pain", "Litterer"]
 
 
 
