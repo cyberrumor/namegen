@@ -19,7 +19,7 @@ listA1 = ["Mr", "Sir", "Lord", "Sire", "Professor", "Doctor", "Master", "Count",
 # Female
 listA2 = ["Mrs", "Queen", "Princess", "Lady", "Widow", "Miss", "Madame", "Mistress", "Countess", "Baroness", "Magistrix"]
 # Non-binary
-listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magister", "Counciler", "Ensign", "Shadow"]
+listA3 = ["Non-Euclidian", "Invertebrate", "Tenticular", "Other-Worldly", "Mre", "Myr", "Ser", "Princet", "Barony", "Minister", "Sovereign", "Imperial", "Magister", "Counciler", "Ensign"]
 # All
 listA4 = ["Arch", "Noble", "Augur", "Seer", "Prelat", "Oligarch", "Tilde"]
 
@@ -29,13 +29,13 @@ listB1 = ["Glorious", "Just", "Fair", "Pure", "Light", "Kind", "Imperious", "Gen
 # Neutral adjectives
 listB2 = ["Capricious", "Fair", "Mercurial", "Calm", "Fickle", "Ambivalent", "Colloquial", "Wise", "Elusive", "Lone", "Dusk", "Twilight", "Immortal", "Gray", "Litany"]
 # Evil adjectives
-listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Darkest", "Night", "Midnight", "Wicked", "Black"]
+listB3 = ["Malevolent", "Admonitory", "Callous", "Monstrous", "Deceitful", "Lazy", "Ambitious", "Pompous", "Rude", "Vain", "Compulsive", "Dire", "Broken", "Cold", "Darkest", "Night", "Midnight", "Wicked", "Black", "Aphotic"]
 
 
 # Born someone, list of places
 listC1 = ["Durak Mithal", "Lion's Gate", "the Serpantine Isle", "the Black Sea", "the Guilded Coast Castle", "the Blood Throne", "the Western Coast", "the Eastern Marsh", "the Southern Wastes", "the Northern Woods", "the Dry Sea", "the Sweltering Isles", "Dragon's Cliff", "the Shrieking Bog", "the Misty Caverns", "the Merciless Abyss", "the Forgotten Paths", "Elder Grove", "Charred Thicket", "Forbidden Orchard", "the Corrupted Mines", "Sheltered Glen", "the World's Coffin", "Last Garden", "Ol' Marine", "Ladder of Vines", "Obsidian Crater", "the Cabal Archives"]
 # Became someone, list of deeds, nouns
-listC2 = ["Heart", "Hero", "Author", "Savior", "Figure", "Luminary", "Sympathizer", "Advocate", "Patron", "Guardian", "Subjugator", "Icon", "Paragon"]
+listC2 = ["Heart", "Hero", "Author", "Savior", "Figure", "Luminary", "Sympathizer", "Advocate", "Patron", "Guardian", "Subjugator", "Icon", "Paragon", "Wizard", "Rogue", "Whisperer", "Conspirator", "Shadow", "Silhouette", "Negotiator", "Ghost", "Stranger"]
 
 
 # No one, list of last names
