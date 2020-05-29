@@ -48,7 +48,7 @@ namesm = ["Sherlock", "Simon", "Stoney", "Edward", "August", "Maximus", "Ormel",
 namesf = ["Xia", "Xaya", "Violet", "Fiora", "Flower", "Rose", "Diamond", "Jewel", "Ruby", "Rita", "Liliana", "Morgana", "Victoria", "Lisa", "Elena", "Iona", "Rozalia", "Mariposa", "Marina", "Orchid", "Daphne", "Teresa", "Jane", "Jillian", "Magnolia", "Paige", ]
 
 # names, indifferent
-namesi = ["Alex", "Atlas", "Aspen", "Sai", "Afton", "River", "Jade", "Kelcee", "Onyx", "Ray", "Brynn", "Brion", "Euros", "Clark", "Crucible", "Thorn"]
+namesi = ["Alex", "Atlas", "Aspen", "Sai", "Afton", "River", "Jade", "Kelcee", "Onyx", "Ray", "Brynn", "Brion", "Euros", "Clark", "Crucible", "Thorn", "Sean"]
 
 # evil names, indifferent
 enames = ["Nemesis", "Guile", "Lich", "Hass", "Hatred", "Mal Coeur", "Coeur de Noir", "Hostility", "Rona", "Gloom", "Abominable", "Pride", "Vanity", "Sloth", "Lust", "Gluttony", "Envy", "Wrath", "Bones", "Revenge", "Emptiness", "Pain", "Litterer"]
