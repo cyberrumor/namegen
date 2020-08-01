@@ -120,30 +120,32 @@ if (question3 == 3):
 
 
 # generate name
-if (question3 == 1):
-	print()
-	print(random.choice(columnA), random.choice(names), "of", random.choice(columnC))
-	print()
-	input('[Enter] to exit')
-	exit()
-elif (question3 == 2):
-	print()
-	print(random.choice(names), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
-	print()
-	input('[Enter] to exit')
-	exit()
-else:
-	# Evil nobody
-	if (question2 == 3):
+if __name__ == "__main__":
+
+	if (question3 == 1):
 		print()
-		print(random.choice(enames), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
+		print(random.choice(columnA), random.choice(names), "of", random.choice(columnC))
 		print()
 		input('[Enter] to exit')
 		exit()
-	# Other nobody
+	elif (question3 == 2):
+		print()
+		print(random.choice(names), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
+		print()
+		input('[Enter] to exit')
+		exit()
 	else:
-		print()
-		print(random.choice(names), random.choice(columnC))
-		print()
-		input('[Enter] to exit')
-		exit()
+		# Evil nobody
+		if (question2 == 3):
+			print()
+			print(random.choice(enames), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
+			print()
+			input('[Enter] to exit')
+			exit()
+		# Other nobody
+		else:
+			print()
+			print(random.choice(names), random.choice(columnC))
+			print()
+			input('[Enter] to exit')
+			exit()
