@@ -13,6 +13,9 @@ columnC = []
 # Places
 columnD = []
 
+# asked after each question
+inputstring = "Enter 1, 2, or 3"
+
 
 # Male
 listA1 = ["Mr", "Sir", "Lord", "Sire", "Professor", "Doctor", "Master", "Count", "Baron", "Magistrate", "Chief"]
@@ -40,112 +43,129 @@ listC2 = ["Heart", "Hero", "Author", "Savior", "Figure", "Luminary", "Sympathize
 
 # No one, list of last names
 listC3 = ["Stoneman", "Shoemaker", "Brewmaster", "Ranger", "Tutor", "Tailor", "Seeker", "Stitcher", "Gambler", "Baker", "Brewer", "Fisher", "Fletcher", "Skinner", "Glover", "Tapper", "Turner", "Woodward", "Bowmaker", "Slaymaker", "Lister", "Potter",  "Sumner", "Kitemaker", "Forseer", "Architect"]
-
 # names, male
 namesm = ["Sherlock", "Simon", "Stoney", "Edward", "August", "Maximus", "Ormel", "Blaine", "James", "Arthur", "Ernest", "William", "Gregory", "Samuel", "Byron", "Augustus", "Zachariah", "Elijah" ]
-
 # names, female
 namesf = ["Xia", "Xaya", "Violet", "Fiora", "Flower", "Rose", "Diamond", "Jewel", "Ruby", "Rita", "Liliana", "Morgana", "Victoria", "Lisa", "Elena", "Iona", "Rozalia", "Mariposa", "Marina", "Orchid", "Daphne", "Teresa", "Jane", "Jillian", "Magnolia", "Paige", ]
-
 # names, indifferent
 namesi = ["Alex", "Atlas", "Aspen", "Sai", "Afton", "River", "Jade", "Kelcee", "Onyx", "Ray", "Brynn", "Brion", "Euros", "Clark", "Crucible", "Thorn", "Sean"]
-
 # evil names, indifferent
 enames = ["Nemesis", "Guile", "Lich", "Hass", "Hatred", "Mal Coeur", "Coeur de Noir", "Hostility", "Rona", "Gloom", "Abominable", "Pride", "Vanity", "Sloth", "Lust", "Gluttony", "Envy", "Wrath", "Bones", "Revenge", "Emptiness", "Pain", "Litterer"]
 
 
+def gender():
 
-# gender
-print("[1]: Male")
-print("[2]: Female")
-print("[3]: Non-binary")
-print("Enter 1, 2, or 3:")
-question1 = int(input())
-if (question1 < 1):
-	print("invalid response, exiting")
-	exit()
-if (question1 > 3):
-	print("invalid response, exiting")
-	exit()
-if (question1 == 1):
-	columnA = listA1
-	names = namesm + namesi
-if (question1 == 2):
-	columnA = listA2
-	names = namesf + namesi
-if (question1 == 3):
-	columnA = listA3
-	names = namesi
+	global columnA
+	global names
 
-columnA = columnA + listA4
+	print("[1]: Male")
+	print("[2]: Female")
+	print("[3]: Non-binary")
+	print(inputstring)
 
-# alignment
-print("[1]: Good")
-print("[2]: Neutral")
-print("[3]: Evil")
-print("Enter 1, 2, or 3:")
-question2 = int(input())
-if (question2 < 1):
-	print("invalid response, exiting")
-	exit()
-if (question2 > 3):
-	print("invalid response, exiting")
-	exit()
-if (question2 == 1):
-	columnB = listB1
-if (question2 == 2):
-	columnB = listB2
-if (question2 == 3):
-	columnB = listB3
-	names = enames
+	while True:
+		try:
+			question1 = int(input())
+			if question1 <= 3 and question1 >= 1:
+				break
+			print(inputstring)
+		except Exception as e:
+			print(e)
+			print(inputstring)
 
-# noun
-print("[1]: Born someone")
-print("[2]: Became someone")
-print("[3]: No one")
-print("Enter 1, 2, or 3:")
-question3 = int(input())
-if (question3 < 1):
-	print("invalid response, exiting")
-	exit()
-if (question3 > 3):
-	print("invalid response, exiting")
-	exit()
-if (question3 == 1):
-	columnC = listC1
-if (question3 == 2):
-	columnC = listC2
-if (question3 == 3):
-	columnC = listC3
+	if (question1 == 1):
+		columnA = listA1 + listA4
+		names = namesm + namesi
+		return 1
+	if (question1 == 2):
+		columnA = listA2 + listA4
+		names = namesf + namesi
+		return 2
+	if (question1 == 3):
+		columnA = listA3 + listA4
+		names = namesi
+		return 3
 
+def alignment():
+
+	global columnB
+
+	print("[1]: Good")
+	print("[2]: Neutral")
+	print("[3]: Evil")
+	print(inputstring)
+
+	while True:
+		try:
+			question2 = int(input())
+			if question2 <= 3 and question2 >= 1:
+				break
+			print(inputstring)
+		except Exception as e:
+			print(e)
+			print(inputstring)
+
+	if (question2 == 1):
+		columnB = listB1
+		return 1
+	if (question2 == 2):
+		columnB = listB2
+		return 2
+	if (question2 == 3):
+		columnB = listB3
+		names = enames
+		return 3
+
+def noun():
+
+	global columnC
+
+	print("[1]: Born someone")
+	print("[2]: Became someone")
+	print("[3]: No one")
+	print(inputstring)
+
+	while True:
+		try:
+			question3 = int(input())
+			if question3 <= 3 and question3 >= 1:
+				break
+			print(inputstring)
+		except Exception as e:
+			print(e)
+			print(inputstring)
+
+
+	if (question3 == 1):
+		columnC = listC1
+		return 1
+	if (question3 == 2):
+		columnC = listC2
+		return 2
+	if (question3 == 3):
+		columnC = listC3
+		return 3
 
 # generate name
 if __name__ == "__main__":
 
+	exitstring = "[Enter] to exit"
+	question1 = gender()
+	question2 = alignment()
+	question3 = noun()
+
+	print()
+
 	if (question3 == 1):
-		print()
 		print(random.choice(columnA), random.choice(names), "of", random.choice(columnC))
-		print()
-		input('[Enter] to exit')
-		exit()
 	elif (question3 == 2):
-		print()
 		print(random.choice(names), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
-		print()
-		input('[Enter] to exit')
-		exit()
 	else:
 		# Evil nobody
 		if (question2 == 3):
-			print()
 			print(random.choice(enames), ", the ", random.choice(columnB), " ", random.choice(columnC), sep="")
-			print()
-			input('[Enter] to exit')
-			exit()
 		# Other nobody
 		else:
-			print()
 			print(random.choice(names), random.choice(columnC))
-			print()
-			input('[Enter] to exit')
-			exit()
+	print()
+	input(exitstring)
